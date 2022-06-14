@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  width: 100vw;
   align-items:center;
+  justify-content: center;
   flex-direction:column;
 `
 export const Text1 = styled.h1 `
@@ -81,9 +83,10 @@ export const TextBtn2 = styled.h1 `
 `
 
 export const ContainerImg = styled.div `
-   margin-top: -150px;
+   margin-top: -100px;
    display: flex;
-   margin-left: -400px;
+   justify-content: center;
+   align-items: center;
 `
 
 export const Text4 = styled.h1 `
