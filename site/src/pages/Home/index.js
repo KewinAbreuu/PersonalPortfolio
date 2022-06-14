@@ -23,7 +23,7 @@ export default function Home() {
           </ContainerBtn>
 
           <ContainerImg>
-             <img src={HomeImage} style={{width:341.44, height:450, resizeMode:'contain'}}/>
+             <img src={HomeImage} style={{width:360.44, height:470, resizeMode:'contain'}}/>
           </ContainerImg>
         </Container>
       </>
