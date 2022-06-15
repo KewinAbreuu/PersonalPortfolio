@@ -34,12 +34,12 @@ export default function Home() {
           </ContainerBtn>
 
           <ContainerImg>
-             <Sociais/>
-             <img src={HomeImage} style={{marginLeft:'300px'}}/>
+            {/* <Sociais/> */}
+             <img src={HomeImage} style={{width:360.44, height:470, resizeMode:'contain'}}/>
           </ContainerImg>
-        </Container>
 
-        <Container>
+
+          <Container>
           <SubCont>
             <Text3 style={{marginTop:128}}>Conheça</Text3>
             <Text4>Sobre Mim</Text4>
@@ -94,6 +94,9 @@ export default function Home() {
 
               
         </Container>
+        </Container>
+
+        
       </>
   );
 }
