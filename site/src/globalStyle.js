@@ -4,14 +4,17 @@ import Bg from './assets/background.jpg';
 
 
 export const GlobalStyle = createGlobalStyle`
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-  * {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+ 
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Roboto;
   }
 
   body{
     background-image:url(${Bg});
+    height: auto;
   }
 `

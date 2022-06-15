@@ -1,7 +1,5 @@
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  display: flex;
+.bottombar{
+    display: flex;
   align-items:center;
   flex-direction:column;
 
@@ -16,4 +14,4 @@ export const Container = styled.div`
   margin-bottom: 20px;
 
   border-radius: 50px;
-`
+}

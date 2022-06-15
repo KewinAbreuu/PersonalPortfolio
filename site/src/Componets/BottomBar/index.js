@@ -1,14 +1,13 @@
 
 import React,{useState} from "react";
-import { Container } from './style';
-
+import './style.css';
 
 export default function BottomBar() {
   return (
       <>
-        <Container>
+        <div className="bottomBar">
             
-        </Container>
+        </div>
       </>
   );
 }

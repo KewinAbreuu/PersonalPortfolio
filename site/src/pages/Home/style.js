@@ -51,13 +51,18 @@ export const Btn = styled.div `
     border-radius:5px;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 
-`
-export const TextBtn = styled.h1 `
     font-size: 12px;
     color:#3E82B5;
     font-family: sans-serif;
     font-weight: 300;
+
+    &:hover{
+        background-color: #3E82B5;
+        color:#fff;
+        cursor:pointer;
+    }
 
 `
 
@@ -69,19 +74,22 @@ export const Btn2 = styled.div `
     border-radius:5px;
     justify-content: center;
     align-items: center;
-    margin-left:10px;
 
-`
-export const TextBtn2 = styled.h1 `
     font-size: 12px;
     color:#fff;
     font-family: sans-serif;
     font-weight: 300;
 
+    &:hover{
+        background-color: #87CEEB;
+        color:#fff;
+        cursor:pointer;
+    }
+
 `
 
 export const ContainerImg = styled.div `
-   margin-top: -150px;
+   margin-top: 50px;
    display: flex;
    margin-left: -400px;
 `
@@ -97,8 +105,10 @@ export const SubCont = styled.div `
     flex-direction: column;
 `
 export const ContainerResume = styled.div `
+    width: 100vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 `
 export const CardSobre = styled.div `
     display: flex;
@@ -120,6 +130,15 @@ export const ContainerGeralCards = styled.div `
 `
 
 export const ContainerSubCards = styled.div `
+    display: flex;
+    flex-direction: row;
+`
+export const ContainerExperience = styled.div `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+export const ContainerCardExeperience = styled.div `
     display: flex;
     flex-direction: row;
 `
