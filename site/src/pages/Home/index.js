@@ -35,7 +35,7 @@ export default function Home() {
 
           <ContainerImg>
             {/* <Sociais/> */}
-             <img src={HomeImage} style={{width:360.44, height:470, resizeMode:'contain'}}/>
+             <img src={HomeImage} style={{width:360.44, height:470, resizeMode:'contain', marginTop:50}}/>
           </ContainerImg>
 
 

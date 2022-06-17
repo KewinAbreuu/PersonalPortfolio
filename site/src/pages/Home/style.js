@@ -54,6 +54,17 @@ export const Btn = styled.div `
     justify-content: center;
     align-items: center;
 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3E82B5;
+
+    transition: ease-in-out 200ms;
+
+    &:hover{
+        background-color:#3E82B5;
+        color: #fff;
+        cursor: pointer;
+    }
+
 `
 export const TextBtn = styled.h1 `
     font-size: 12px;
@@ -73,6 +84,18 @@ export const Btn2 = styled.div `
     align-items: center;
     margin-left:10px;
 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+
+    transition: ease-in-out 200ms;
+
+
+    &:hover{
+        background-color:#87CEFA;
+        color: #fff;
+        cursor: pointer;
+    }
+
 `
 export const TextBtn2 = styled.h1 `
     font-size: 12px;
@@ -83,7 +106,7 @@ export const TextBtn2 = styled.h1 `
 `
 
 export const ContainerImg = styled.div `
-   margin-top: -100px;
+   /* margin-top: -100px; */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -126,3 +149,14 @@ export const ContainerSubCards = styled.div `
     display: flex;
     flex-direction: row;
 `
+
+export const ContainerCardExeperience = styled.div `
+    display: flex;
+    flex-direction: row;
+`
+
+export const ContainerExperience = styled.div `
+    display: flex;
+    flex-direction: column;
+`
+
