@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -7,13 +7,13 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction:column;
 `
-export const Text1 = styled.h1 `
-    margin-top: 152px;
+export const Text1 = styled.h1`
+    margin-top: 100px;
     color:#fff;
     font-family: sans-serif;
     font-size: 26px;
 `
-export const Text0 = styled.h1 `
+export const Text0 = styled.h1`
     margin-top: 42px;
     color:#fff;
     font-family: sans-serif;
@@ -22,14 +22,14 @@ export const Text0 = styled.h1 `
     width: 550px;
 `
 
-export const Text2 = styled.h1 `
+export const Text2 = styled.h1`
     margin-top: 16px;
     color:#fff;
     font-family: sans-serif;
     font-size: 50px;
 
 `
-export const Text3 = styled.h1 `
+export const Text3 = styled.h1`
     margin-top: 16px;
     color:#fff;
     font-family: sans-serif;
@@ -37,14 +37,14 @@ export const Text3 = styled.h1 `
     font-weight:300;
 
 `
-export const ContainerBtn = styled.div `
+export const ContainerBtn = styled.div`
     display: flex;
     align-items:center;
     flex-direction:row;;
     margin-top: 48px;
 
 `
-export const Btn = styled.div `
+export const Btn = styled.div`
     display: flex;
     width:150px;
     height:40px;
@@ -66,7 +66,7 @@ export const Btn = styled.div `
     }
 
 `
-export const TextBtn = styled.h1 `
+export const TextBtn = styled.h1`
     font-size: 12px;
     color:#3E82B5;
     font-family: sans-serif;
@@ -74,7 +74,7 @@ export const TextBtn = styled.h1 `
 
 `
 
-export const Btn2 = styled.div `
+export const Btn2 = styled.div`
     display: flex;
     width:150px;
     height:40px;
@@ -97,7 +97,7 @@ export const Btn2 = styled.div `
     }
 
 `
-export const TextBtn2 = styled.h1 `
+export const TextBtn2 = styled.h1`
     font-size: 12px;
     color:#fff;
     font-family: sans-serif;
@@ -105,28 +105,28 @@ export const TextBtn2 = styled.h1 `
 
 `
 
-export const ContainerImg = styled.div `
-   /* margin-top: -100px; */
+export const ContainerImg = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
 `
 
-export const Text4 = styled.h1 `
+export const Text4 = styled.h1`
     font-size: 34px;
     color:#3E82B5;
     font-family: sans-serif;
     font-weight: 700;
 `
-export const SubCont = styled.div `
+export const SubCont = styled.div`
     display: flex;
     flex-direction: column;
 `
-export const ContainerResume = styled.div `
+export const ContainerResume = styled.div`
     display: flex;
+    max-width: 100vw;
     flex-direction: row;
 `
-export const CardSobre = styled.div `
+export const CardSobre = styled.div`
     display: flex;
     flex-direction: column;
 
@@ -140,23 +140,22 @@ export const CardSobre = styled.div `
     background-color:#2A2C69;
 `
 
-export const ContainerGeralCards = styled.div `
+export const ContainerGeralCards = styled.div`
     display: flex;
     flex-direction: column;
 `
 
-export const ContainerSubCards = styled.div `
+export const ContainerSubCards = styled.div`
     display: flex;
     flex-direction: row;
 `
 
-export const ContainerCardExeperience = styled.div `
+export const ContainerCardExeperience = styled.div`
     display: flex;
     flex-direction: row;
 `
 
-export const ContainerExperience = styled.div `
+export const ContainerExperience = styled.div`
     display: flex;
     flex-direction: column;
 `
-

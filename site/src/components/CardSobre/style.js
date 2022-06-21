@@ -1,7 +1,7 @@
 
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const CardSobre = styled.div `
+export const CardSobre = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,14 +17,14 @@ export const CardSobre = styled.div `
     background-color:#2A2C69;
 `
 
-export const Tittle = styled.h1 `
+export const Tittle = styled.h1`
     font-size: 16px;
     color: #fff;
     font-family: sans-serif;
     margin-top: 20px;
 
 `
-export const Desription = styled.h1 `
+export const Desription = styled.h1`
     font-size: 12px;
     font-weight: 100;
     color: #fff;

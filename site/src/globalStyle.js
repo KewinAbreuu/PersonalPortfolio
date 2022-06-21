@@ -1,7 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
-import Bg from './assets/background.jpg';
-
+import Bg from './assets/background.jpg'
 
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
@@ -15,6 +14,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     background-image:url(${Bg});
+    max-width: 100vw;
     height: auto;
+    overflow-x: hidden;
   }
 `

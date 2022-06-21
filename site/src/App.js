@@ -1,18 +1,17 @@
 
-import React,{useState} from "react";
-import Route from "./routes";
-import {BrowserRouter } from 'react-router-dom';
+import React, { useState } from 'react'
+import Route from './routes'
+import { BrowserRouter } from 'react-router-dom'
 
-import {GlobalStyle} from './globalStyle'
+import { GlobalStyle } from './globalStyle'
 
-
-function App() {
+function App () {
   return (
     <BrowserRouter>
       <GlobalStyle/>
       <Route/>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

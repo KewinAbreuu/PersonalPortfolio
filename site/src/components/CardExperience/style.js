@@ -1,7 +1,7 @@
 
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const CardSobre = styled.div `
+export const CardSobre = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,21 +19,21 @@ export const CardSobre = styled.div `
     background-color:#2A2C69;
 `
 
-export const Tittle = styled.h1 `
+export const Tittle = styled.h1`
     font-size: 16px;
     color: #3E82B5;
     font-family: sans-serif;
     margin-top: 40px;
 
 `
-export const Desription = styled.div `
+export const Desription = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
 `
-export const Feature = styled.h1 `
+export const Feature = styled.h1`
     font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
@@ -41,7 +41,7 @@ export const Feature = styled.h1 `
     margin-left: 10px;
 
 `
-export const ContainerFeature = styled.h1 `
+export const ContainerFeature = styled.h1`
    display: flex;
    width: 100%;
    flex-direction: row;
