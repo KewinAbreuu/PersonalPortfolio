@@ -8,17 +8,18 @@ import {
   Container, Text0, Text1, Text2, Text3, Text4, ContainerBtn, Btn,
   Btn2, ContainerImg, SubCont, ContainerResume,
   ContainerGeralCards, ContainerSubCards, ContainerExperience,
-  ContainerCardExeperience
+  ContainerCardExeperience, Banner, BannerSobre, ContainerServices, CardServices
 } from './style'
 
 import BottomBar from '../../components/BottomBar'
 import CardsSobre from '../../components/CardSobre'
 import CardsExperience from '../../components/CardExperience'
+import FeaturesCardServices from '../../components/CardsServices'
 
 export default function Home () {
   return (
       <>
-        <Container>
+        <Container id="home">
           <BottomBar/>
           <Text1>Olá, Eu Sou</Text1>
           <Text2>Kewin Abreu</Text2>
@@ -35,22 +36,22 @@ export default function Home () {
           </ContainerBtn>
 
           <ContainerImg>
-             <img src={HomeImage} style={{ width: 360.44, height: 470, resizeMode: 'contain', marginTop: 50 }}/>
+             <Banner src={HomeImage} />
           </ContainerImg>
 
-          <Container>
-          <SubCont>
-            <Text3 style={{ marginTop: 128 }}>Conheça</Text3>
+          <Container >
+          <SubCont id="sobre">
+            <Text3 style={{ marginTop: 128 }} >Conheça</Text3>
             <Text4>Sobre Mim</Text4>
           </SubCont>
 
           <ContainerResume>
-             <img src={SobreImage} style={{ width: 550, height: 652, resizeMode: 'contain' }}/>
+             <BannerSobre src={SobreImage} />
               <ContainerGeralCards>
 
                 <ContainerSubCards>
                   <CardsSobre icon={GitImage} tittle="Desenvolvedor" desc="Fullstack"/>
-                  <CardsSobre icon={GitImage} tittle="Expeciência" desc="2+ Anos"/>
+                  <CardsSobre icon={GitImage} tittle="Experiência" desc="2+ Anos"/>
                   <CardsSobre icon={GitImage} tittle="Projetos" desc="+20 Concluídos"/>
                 </ContainerSubCards>
 
@@ -62,18 +63,16 @@ export default function Home () {
                     make a type specimen book.
                   </Text0>
 
-                  <Btn2 style={{ marginLeft: -5, marginTop: 24 }}>
-                  <Btn2>
+                  <Btn2 style={{ marginTop: 24, alignSelf: 'flex-start' }}>
                     Vamos Conversar!
-                  </Btn2>
                   </Btn2>
               </ContainerGeralCards>
 
           </ContainerResume>
 
-          <ContainerExperience>
+          <ContainerExperience id="habilidades">
              <Text3 style={{ marginTop: 100, fontSize: 18, marginBottom: 10 }}>Habilidades Que Desenvolvo</Text3>
-             <Text4>Minha Experiência</Text4>
+             <Text4 style={{ marginBottom: 50 }}>Minha Experiência</Text4>
 
             <ContainerCardExeperience>
                <CardsExperience
@@ -90,6 +89,20 @@ export default function Home () {
             </ContainerCardExeperience>
 
           </ContainerExperience>
+
+          <ContainerServices id="servicos">
+             <Text3 style={{ marginTop: 100, fontSize: 18, marginBottom: 10 }}>O Que Eu Ofereço</Text3>
+             <Text4 style={{ marginBottom: 20 }}>Serviços</Text4>
+
+              <CardServices>
+                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
+                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
+                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
+                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
+                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
+              </CardServices>
+
+          </ContainerServices>
 
         </Container>
         </Container>

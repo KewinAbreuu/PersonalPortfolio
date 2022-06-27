@@ -5,18 +5,22 @@ export const CardSobre = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 
     width: 466px;
     height: 266px;
 
     margin-right: 64px;
     margin-top: 32px;
-    margin-bottom: 200px;
 
     border-radius: 20px;
 
     background-color:#2A2C69;
+
+    @media(max-width:1075px){
+      margin: 0 0 10px 0;
+      width: 100vw;
+      border-radius: 0px;
+    }
 `
 
 export const Tittle = styled.h1`

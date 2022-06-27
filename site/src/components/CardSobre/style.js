@@ -15,6 +15,21 @@ export const CardSobre = styled.div`
     border-radius: 20px;
 
     background-color:#2A2C69;
+
+    @media(max-width:1145px){
+      width: 138px;
+      height: 126px;
+    }
+    @media(max-width:1035px){
+      width: 120px;
+      height: 126px;
+    }
+    @media(max-width:980px){
+      margin: 0px 0px 10px 0px;
+      width: 90vw;
+      height: 153px;
+    }
+   
 `
 
 export const Tittle = styled.h1`

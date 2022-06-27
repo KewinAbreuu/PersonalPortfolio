@@ -10,12 +10,13 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: Roboto;
+
+    scroll-behavior: smooth;
   }
 
   body{
     background-image:url(${Bg});
     max-width: 100vw;
-    height: auto;
     overflow-x: hidden;
   }
 `

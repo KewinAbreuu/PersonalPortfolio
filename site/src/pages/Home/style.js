@@ -6,9 +6,10 @@ export const Container = styled.div`
   align-items:center;
   justify-content: center;
   flex-direction:column;
+  scroll-behavior: smooth;
 `
 export const Text1 = styled.h1`
-    margin-top: 100px;
+    margin-top: 50px;
     color:#fff;
     font-family: sans-serif;
     font-size: 26px;
@@ -20,6 +21,13 @@ export const Text0 = styled.h1`
     font-size: 16px;
     text-align: justify;
     width: 550px;
+
+    @media(max-width:1145px){
+      width: 40vw;
+    }
+    @media(max-width:980px){
+      width: 90vw;
+    }
 `
 
 export const Text2 = styled.h1`
@@ -53,6 +61,7 @@ export const Btn = styled.div`
     border-radius:5px;
     justify-content: center;
     align-items: center;
+    margin-right:10px;
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #3E82B5;
@@ -82,7 +91,6 @@ export const Btn2 = styled.div`
     border-radius:5px;
     justify-content: center;
     align-items: center;
-    margin-left:10px;
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fff;
@@ -94,6 +102,10 @@ export const Btn2 = styled.div`
         background-color:#87CEFA;
         color: #fff;
         cursor: pointer;
+    }
+
+    @media(max-width:400px){
+      align-self:flex-start;
     }
 
 `
@@ -116,6 +128,7 @@ export const Text4 = styled.h1`
     color:#3E82B5;
     font-family: sans-serif;
     font-weight: 700;
+    margin-bottom: 20px;
 `
 export const SubCont = styled.div`
     display: flex;
@@ -125,6 +138,11 @@ export const ContainerResume = styled.div`
     display: flex;
     max-width: 100vw;
     flex-direction: row;
+
+    @media(max-width:980px){
+       flex-direction: column;
+       align-items: center;
+    }
 `
 export const CardSobre = styled.div`
     display: flex;
@@ -143,19 +161,73 @@ export const CardSobre = styled.div`
 export const ContainerGeralCards = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
 `
 
 export const ContainerSubCards = styled.div`
     display: flex;
     flex-direction: row;
+    width: 100%;
+
+    @media(max-width:980px){
+       flex-direction: column;
+       align-items: center;
+    }
 `
 
 export const ContainerCardExeperience = styled.div`
     display: flex;
     flex-direction: row;
+
+    @media(max-width:1075px){
+      flex-direction: column;
+    }
 `
 
 export const ContainerExperience = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;   
+`
+export const ContainerServices = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+`
+
+export const Banner = styled.img`
+     width: 360;
+     height: 432px;
+     margin-Top: 50px;
+`
+
+export const BannerSobre = styled.img`
+      width: 550px;
+      height: 623px;
+      z-index: 1;
+
+    @media(max-width:930px){
+      width: 396px;
+      height: 466px;
+    }
+
+`
+
+export const CardServices = styled.div`
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+    width: 100vw;
+    height: auto;
+
+    margin-top: 32px;
+    margin-bottom: 500px;
+
+    border-radius: 20px;
+
+    background-color:red;
+
 `
