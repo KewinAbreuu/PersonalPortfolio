@@ -138,7 +138,7 @@ export const ContainerResume = styled.div`
     display: flex;
     max-width: 100vw;
     flex-direction: row;
-
+    
     @media(max-width:980px){
        flex-direction: column;
        align-items: center;
