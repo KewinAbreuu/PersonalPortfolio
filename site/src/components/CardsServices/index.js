@@ -1,13 +1,40 @@
 
 import React from 'react'
-import { Container } from './style'
+import { Container, Header, Infos, TextHeader, TextInfos, CheckInfos } from './style'
 
-export default function CardServices ({ icon, name }) {
+import check from '../../assets/check.svg'
+
+export default function CardServices ({
+  header, info,
+  info2, info3, info4
+}) {
   return (
       <>
         <Container>
-            <img src={icon} style={{ marginRight: 10 }}/>
-            <p>{name}</p>
+            <Header>
+               <TextHeader>{header}</TextHeader>
+            </Header>
+            <Infos>
+              <TextInfos>
+                  <CheckInfos src={check}/>
+                  {info}
+                </TextInfos>
+
+                <TextInfos>
+                  <CheckInfos src={check}/>
+                  {info2}
+                </TextInfos>
+
+                <TextInfos>
+                  <CheckInfos src={check}/>
+                  {info3}
+                </TextInfos>
+
+                <TextInfos>
+                  <CheckInfos src={check}/>
+                  {info4}
+                </TextInfos>
+            </Infos>
         </Container>
       </>
   )

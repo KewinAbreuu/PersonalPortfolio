@@ -8,13 +8,13 @@ import {
   Container, Text0, Text1, Text2, Text3, Text4, ContainerBtn, Btn,
   Btn2, ContainerImg, SubCont, ContainerResume,
   ContainerGeralCards, ContainerSubCards, ContainerExperience,
-  ContainerCardExeperience, Banner, BannerSobre, ContainerServices, CardServices
+  ContainerCardExeperience, Banner, BannerSobre, ContainerServices, SubContainerServices
 } from './style'
 
 import BottomBar from '../../components/BottomBar'
 import CardsSobre from '../../components/CardSobre'
 import CardsExperience from '../../components/CardExperience'
-import FeaturesCardServices from '../../components/CardsServices'
+import CardService from '../../components/CardsServices'
 
 export default function Home () {
   return (
@@ -77,15 +77,15 @@ export default function Home () {
             <ContainerCardExeperience>
                <CardsExperience
                 icon={GitImage} tittle="Frontend Development"
-                desc="HTML" icon2={GitImage} desc2="CSS"
-                icon3={GitImage} desc3="Javascript"
-                icon4={GitImage} desc4="React"/>
+                desc="ReactJS" icon2={GitImage} desc2="Javascript"
+                icon3={GitImage} desc3="Figma"
+                icon4={GitImage} desc4="Bootstrap"/>
 
                 <CardsExperience
                 icon={GitImage} tittle="Backend Development"
-                desc="HTML" icon2={GitImage} desc2="CSS"
-                icon3={GitImage} desc3="Javascript"
-                icon4={GitImage} desc4="React"/>
+                desc="NodeJS" icon2={GitImage} desc2="Express"
+                icon3={GitImage} desc3="Docker"
+                icon4={GitImage} desc4="Postgres"/>
             </ContainerCardExeperience>
 
           </ContainerExperience>
@@ -93,14 +93,31 @@ export default function Home () {
           <ContainerServices id="servicos">
              <Text3 style={{ marginTop: 100, fontSize: 18, marginBottom: 10 }}>O Que Eu Ofereço</Text3>
              <Text4 style={{ marginBottom: 20 }}>Serviços</Text4>
+          <SubContainerServices>
+              <CardService
+              header="UI Design"
+              info="Figma"
+              info2="Illustrator"
+              info3="Photoshop"
+              info4="AfterEffects"
+              />
 
-              <CardServices>
-                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
-                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
-                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
-                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
-                <FeaturesCardServices icon={GitImage} name="bootstrap"/>
-              </CardServices>
+              <CardService
+              header="Desenvolvimento Web"
+              info="Javascript"
+              info2="NodeJs"
+              info3="ReactJS"
+              info4="SQL"
+              />
+
+              <CardService
+              header="Desenvolvimento Mobile"
+              info="React Native"
+              info2="NodeJS"
+              info3="SQL"
+              info4="Firebase"
+              />
+          </SubContainerServices>
 
           </ContainerServices>
 

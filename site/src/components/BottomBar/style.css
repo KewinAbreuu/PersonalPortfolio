@@ -18,4 +18,19 @@
   border-radius: 50px;
 
   z-index: 9;
+
+}
+
+#root > div > div.bottomBar :hover{
+  cursor: pointer;
+
+}
+
+#icon{
+  width: 100%;
+  transition: all ease-in-out 200ms;
+}
+
+#icon:hover {
+  width: 30px;
 }

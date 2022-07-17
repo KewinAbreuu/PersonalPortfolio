@@ -9,7 +9,7 @@ export const Container = styled.div`
   scroll-behavior: smooth;
 `
 export const Text1 = styled.h1`
-    margin-top: 50px;
+    margin-top: 150px;
     color:#fff;
     font-family: sans-serif;
     font-size: 26px;
@@ -193,6 +193,7 @@ export const ContainerServices = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;   
+    
 `
 
 export const Banner = styled.img`
@@ -213,21 +214,11 @@ export const BannerSobre = styled.img`
 
 `
 
-export const CardServices = styled.div`
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+export const SubContainerServices = styled.div`
+  display: flex;
 
-    padding: 50px;
-    width: 100vw;
-    height: auto;
-
-    margin-top: 32px;
-    margin-bottom: 500px;
-
-    border-radius: 20px;
-
-    background-color:red;
-
+  @media(max-width: 970px){
+      display: flex;
+      flex-direction: column;
+    }
 `

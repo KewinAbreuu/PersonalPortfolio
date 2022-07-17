@@ -16,23 +16,28 @@ export default function BottomBar () {
   function habilidades () {
     window.location.href = '#habilidades'
   }
+
+  function services () {
+    window.location.href = '#servicos'
+  }
+
   return (
       <>
         <div className="bottomBar">
-            <div onClick={home}>
-              <img src={B1}/>
+            <div onClick={home} id="cont">
+              <img src={B1} id="icon"/>
             </div>
-            <div onClick={sobre}>
-              <img src={B1}/>
+            <div onClick={sobre} id="cont">
+              <img src={B1} id="icon"/>
             </div>
-            <div onClick={habilidades}>
-              <img src={B1}/>
+            <div onClick={habilidades} id="cont">
+              <img src={B1} id="icon"/>
             </div>
-            <div onClick={home}>
-              <img src={B1}/>
+            <div onClick={services} id="cont">
+              <img src={B1} id="icon"/>
             </div>
-            <div onClick={home}>
-              <img src={B1}/>
+            <div onClick={home} id="cont">
+              <img src={B1} id="icon"/>
             </div>
 
         </div>
