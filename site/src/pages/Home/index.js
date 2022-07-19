@@ -1,5 +1,5 @@
 
-import React, {} from 'react'
+import React, { useEffect } from 'react'
 import HomeImage from '../../assets/image1.png'
 import SobreImage from '../../assets/image2ok.png'
 import GitImage from '../../assets/git.svg'
@@ -16,11 +16,36 @@ import CardsSobre from '../../components/CardSobre'
 import CardsExperience from '../../components/CardExperience'
 import CardService from '../../components/CardsServices'
 
+import ScrollReveal from 'scrollreveal'
+
 export default function Home () {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '100px',
+      duration: 3000,
+      reset: false
+    })
+    sr.reveal(
+      `
+      #home,
+      #sobre,
+      #habilidades,
+      #servicos
+      `,
+      {
+        opacity: 0,
+        interval: 100
+      }
+    )
+  }, [])
   return (
       <>
+      <div style={{ width: '100vw', display: 'flex', justifyContent: 'center' }}>
+       <BottomBar/>
+      </div>
+
         <Container id="home">
-          <BottomBar/>
           <Text1>Olá, Eu Sou</Text1>
           <Text2>Kewin Abreu</Text2>
           <Text3>Fullstack Developer</Text3>
@@ -39,8 +64,8 @@ export default function Home () {
              <Banner src={HomeImage} />
           </ContainerImg>
 
-          <Container >
-          <SubCont id="sobre">
+          <Container id="sobre" >
+          <SubCont >
             <Text3 style={{ marginTop: 128 }} >Conheça</Text3>
             <Text4>Sobre Mim</Text4>
           </SubCont>
@@ -71,7 +96,7 @@ export default function Home () {
           </ContainerResume>
 
           <ContainerExperience id="habilidades">
-             <Text3 style={{ marginTop: 100, fontSize: 18, marginBottom: 10 }}>Habilidades Que Desenvolvo</Text3>
+             <Text3 style={{ paddingTop: 100, fontSize: 18, marginBottom: 10 }}>Habilidades Que Desenvolvo</Text3>
              <Text4 style={{ marginBottom: 50 }}>Minha Experiência</Text4>
 
             <ContainerCardExeperience>
